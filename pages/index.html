@@ -78,7 +78,8 @@
     <br><br>
     <div class="card-group" style="text-align: center;">
         <div class="card" style="border-radius: 20px;">
-            <a href="pages/venda.html"><img src="../img/card-01.png" class="card-img-top" style="border-radius: 20px;"></a>
+            <a href="pages/venda.html"><img src="../img/card-01.png" class="card-img-top"
+                    style="border-radius: 20px;"></a>
             <div class="card-body">
                 <p class="card-text">
                     Nossa loja dispõe de um catálogo completo de instrumentos musicais de corda, teclas e
@@ -90,7 +91,8 @@
             </div>
         </div>
         <div class="card" style="border-radius: 20px;">
-            <a href="pages/conserto.html"><img src="../img/card-02.png" class="card-img-top" style="border-radius: 20px;"></a>
+            <a href="pages/conserto.html"><img src="../img/card-02.png" class="card-img-top"
+                    style="border-radius: 20px;"></a>
             <div class="card-body">
                 <p class="card-text">
                     Seja para a realização de pequenos reparos ou para grandes revitalizações, nossa equipe de
@@ -105,7 +107,8 @@
             </div>
         </div>
         <div class="card" style="border-radius: 20px;">
-            <a href="pages/upgrade.html"><img src="../img/card-03.png" class="card-img-top" style="border-radius: 20px;"></a>
+            <a href="pages/upgrade.html"><img src="../img/card-03.png" class="card-img-top"
+                    style="border-radius: 20px;"></a>
             <div class="card-body">
                 <p class="card-text">
                     Você sente que está na hora de ir ao próximo nível, porém não quer gastar muito para ter o
@@ -135,6 +138,25 @@
         </div>
     </div>
     <br><br>
+
+    <!-- Modal -->
+    <div class="modal" id="anuncioModal" tabindex="-1" aria-labelledby="anuncioModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="anuncioModalLabel">PinhalMusic - Anúncio Promo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../img/anuncio.jpg" width="100%">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer class="footer bg-dark py-3" style="text-align: center; position: relative; bottom: 0; width: 100%;">
         <div class="container-fluid text-muted">
             <div class="row">
@@ -147,13 +169,27 @@
                 <div class="col-sm">
                     <div class="container py-3">
                         <a href="#"><img src="../img/facebook.png" height="64px" width="64px"></a>
-                        <a href="#" style="padding-left: 25px;"><img src="../img/instagram.png" height="64px" width="64px"></a>
-                        <a href="#" style="padding-left: 25px;"><img src="../img/whatsapp.png" height="64px" width="64px"></a>
+                        <a href="#" style="padding-left: 25px;"><img src="../img/instagram.png" height="64px"
+                                width="64px"></a>
+                        <a href="#" style="padding-left: 25px;"><img src="../img/whatsapp.png" height="64px"
+                                width="64px"></a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('#exemplomodal').modal('show');
+        });
+    </script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('#anuncioModal').modal('show');
+        });
+    </script>
 </body>
 
-</html>
+</html><!-- bootstrap -->
+    
